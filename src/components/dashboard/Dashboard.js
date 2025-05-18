@@ -28,8 +28,7 @@ export default function Dashboard(props) {
     <AppTheme {...props} themeComponents={xThemeComponents}>
       <CssBaseline enableColorScheme />
       <Box sx={{ display: 'flex' }}>
-        <SideMenu />
-        <AppNavbar />
+        
         {/* Main content */}
         <Box
           component="main"
@@ -51,6 +50,8 @@ export default function Dashboard(props) {
             }}
           >
             <Header />
+            <SideMenu />
+        <AppNavbar />
             <MainGrid />
           </Stack>
         </Box>
